@@ -2,12 +2,24 @@
 const str: string = "world";
 console.log(`hello ${str}`);
 
-// new Promise
+// Promises
 new Promise<string>((resolve, reject) => {
   setTimeout(() => {
     resolve("done");
   }, 1000);
 });
+function func(): Promise<void> {
+  return new Promise<void>((resolve, reject) => {
+    reject(); // Same as "throw undefined"
+  });
+}
+(async () => {
+  try {
+    await func();
+  } catch (err: unknown) {
+    console.log(`e: ${err}`); // err: undefined
+  }
+})();
 
 // const of
 const arr: number[] = [1, 2, 3];
