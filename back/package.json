@@ -1,7 +1,7 @@
 {
-  "name": "ts-practice",
+  "name": "back",
   "version": "1.0.0",
-  "description": "TypeScript Practice",
+  "description": "Back End",
   "license": "ISC",
   "author": "Goncalo Garcia",
   "type": "commonjs",

@@ -1,0 +1,25 @@
+Curl
+  createAccount(account)
+    curl -w '\n' -X POST -H 'Content-Type: application/json' -d '{"id": "123"}' http://localhost:1234/accounts
+  getAccount(accountId)
+    curl -w '\n' http://localhost:1234/accounts/123
+  deleteAccount(accountId)
+    curl -w '\n' -X DELETE http://localhost:1234/accounts/123
+  New Line
+    -w '\n'
+
+
+Get Bearer Token
+  URL: https://login.blp-digital.ch/oauth/v2/token
+  client_id='goncalo-machine-user@service-account.af933ff0-217b-59c1-85f4-bd1c3cc7692d.blp-digital.com'
+  client_secret='bO8CYsxceiOvPelNW0XqOcZ2SWusAZTPfT0Okgn6QlhYphGK1iHQ5nl3bH7U48IG'
+  scope='openid urn:zitadel:iam:user:metadata urn:zitadel:iam:org:projects:roles urn:zitadel:iam:org:project:id:183025666726297857:aud'
+  grant_type='client_credentials'
+curl -X POST \
+ -H 'content-type: application/x-www-form-urlencoded' \
+ -d client_id='goncalo-machine-user@service-account.af933ff0-217b-59c1-85f4-bd1c3cc7692d.blp-digital.com' \
+ -d client_secret='bO8CYsxceiOvPelNW0XqOcZ2SWusAZTPfT0Okgn6QlhYphGK1iHQ5nl3bH7U48IG' \
+ -d scope='openid urn:zitadel:iam:user:metadata urn:zitadel:iam:org:projects:roles urn:zitadel:iam:org:project:id:183025666726297857:aud' \
+ -d grant_type='client_credentials' \
+ https://login.blp-digital.ch/oauth/v2/token
+

@@ -1,0 +1,10 @@
+React 19 + Vite + TypeScript
+TanStack Query for server state
+React Router for page structure
+React Hook Form + Zod for form validation
+API module layer that calls Express endpoints
+
+React + TypeScript + Vite as the core stack, with React Router, TanStack Query, and React Hook Form/Zod for app architecture.
+
+npm create vite@latest . -- --template react-ts
+
