@@ -1,7 +1,7 @@
 import { Request, Response, Router } from "express";
-import { Account } from "../domain/account";
-import { Aggregate } from "../domain/aggregate";
-import { IAccountsRepo } from "../domain/iaccounts_repo";
+import { Account } from "../domain/account.js";
+import { Aggregate } from "../domain/aggregate.js";
+import { IAccountsRepo } from "../domain/iaccounts-repo.js";
 
 type ReqBodyAccountId = {
   accountId: string;

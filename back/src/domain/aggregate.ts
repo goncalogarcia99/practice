@@ -1,6 +1,6 @@
-import { Account } from "./account";
-import { IAccountsRepo } from "./iaccounts_repo";
-import { IExternalApi } from "./iexternal_api";
+import { Account } from "./account.js";
+import { IAccountsRepo } from "./iaccounts-repo.js";
+import { IExternalApi } from "./iexternal-api.js";
 
 export class Aggregate {
   private readonly accountsRepo: IAccountsRepo;

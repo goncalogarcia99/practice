@@ -1,5 +1,5 @@
-import { Account } from "../domain/account";
-import { IExternalApi } from "../domain/iexternal_api";
+import { Account } from "../domain/account.js";
+import { IExternalApi } from "../domain/iexternal-api.js";
 
 export class ExternalApi implements IExternalApi {
   async init(): Promise<void> {}

@@ -1,11 +1,11 @@
 import express, { Express, json, urlencoded } from "express";
 import { Server } from "net";
-import { Aggregate } from "../domain/aggregate";
-import { IAccountsRepo } from "../domain/iaccounts_repo";
-import { IExternalApi } from "../domain/iexternal_api";
-import { ExternalApi } from "../implementations/external_api";
-import { MemoryAccountsRepo } from "../implementations/memory_accounts_repo";
-import { Routes } from "./routes";
+import { Aggregate } from "../domain/aggregate.js";
+import { IAccountsRepo } from "../domain/iaccounts-repo.js";
+import { IExternalApi } from "../domain/iexternal-api.js";
+import { ExternalApi } from "../implementations/external-api.js";
+import { MemoryAccountsRepo } from "../implementations/memory-accounts-repo.js";
+import { Routes } from "./routes.js";
 
 const PORT = 1234;
 const PATH_ACCOUNTS_API = "/accounts";

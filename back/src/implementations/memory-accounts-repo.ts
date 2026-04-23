@@ -1,5 +1,5 @@
-import { Account } from "../domain/account";
-import { IAccountsRepo } from "../domain/iaccounts_repo";
+import { Account } from "../domain/account.js";
+import { IAccountsRepo } from "../domain/iaccounts-repo.js";
 
 export class MemoryAccountsRepo implements IAccountsRepo {
   private readonly accounts: Map<string, Account>;
