@@ -7,7 +7,7 @@
     /* Emit */
     "declaration": true, // Generate type declarations (.d.ts files).
     "importHelpers": true, // tslib required as a dependency!
-	"rootDir": "back/src",
+	"rootDir": "src",
     "outDir": "dist",
     "removeComments": true,
     "sourceMap": true, // For debugging (.js.map files).
@@ -24,6 +24,6 @@
     "skipLibCheck": true // Enabling this option speeds up the build process - .d.ts files are not type checked.
   },
   "include": [
-    "back/src"
+    "src"
   ]
 }
